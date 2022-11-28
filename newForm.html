@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+function validate(){  
+var name=document.f1.name.value;  
+console.log(name);
+document.write(name);
+if(name.length==0){
+console.log("no input given in password");
+}
+
+function validatePin(){  
+var name=document.f2.pin.value;  
+console.log(pin);
+document.write(pin);
+if(name.length==0){
+console.log("no input given in pin");
+}
+
+
+ 
+ </script>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+ <form name="f1" action="" onsubmit="return validate()">  
+   <label for="name">Password:</label><br>
+   <input type="text" id="name"><br><br>
+   <input type="submit" value="Submit"><br><br>
+ </form>
+
+<form name="f2" action="" onsubmit="return validatePin()">
+	<label for="pin">Pin:</label><br>
+   <input type="text" id="pin"><br><br>
+   <input type="submit" value="Submit">
+	
+ </form>
+</body>
+</html>
